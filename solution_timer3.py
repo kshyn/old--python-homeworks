@@ -1,0 +1,9 @@
+t = int(input())
+h = str(t % 86400 // 3600)
+m = t % 3600 // 60
+m1 = str(m // 10)
+m2 = str(m % 10)
+s = t % 3600 % 60
+s1 = str(s // 10)
+s2 = str(s % 10)
+print(h, m1 + m2, s1 + s2, sep=':')

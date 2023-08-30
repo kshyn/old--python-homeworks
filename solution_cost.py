@@ -1,0 +1,5 @@
+costRub = int(input())
+costCop = int(input())
+quant = int(input())
+costSumm = (costRub * quant * 100 + costCop * quant)
+print(costSumm // 100, costSumm % 100)
