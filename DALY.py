@@ -1,16 +1,16 @@
-print('Введите ожидаемую продолжительность жизни')
+print('Enter life expectancy')
 LIFE = float(input())
-print('Введите возраст, в котором произошло заражение ВИЧ')
+print('Enter the age at which HIV infection occurred')
 INV = float(input())
-print('Введите возраст, в котором началась антиретровирусная терапия')
+print('Enter the age at which antiretroviral therapy started')
 MED = float(input())
-print('Введите тяжесть недуга без терапии')
+print('Enter the severity of the disease without therapy')
 WEIGHT1 = float(input())
-print('Введите тяжесть недуга с терапией')
+print('Enter the severity of the disease with therapy')
 WEIGHT2 = float(input())
-print('Введите возраст, в котором произошла смерть')
+print('Enter the age at which death occurred')
 DEATH = float(input())
 YLD = (DEATH - MED) * WEIGHT2 + (MED - INV) * WEIGHT1
 YLL = LIFE - DEATH
-DALY = YLD + YLL
+DALY=YLD+YLL
 print('DALY LOST=', DALY)
